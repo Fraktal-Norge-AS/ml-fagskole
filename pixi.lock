@@ -1084,16 +1084,16 @@ packages:
 - pypi: ./
   name: ml-fagskole
   version: 0.1.0
-  sha256: dec90d5ad75278797311c2eff1749691716ca96764d53deb532185eb435545f6
+  sha256: 1c917b608eae7e46325abf0d6e35ec32fbef9d6cdba30fdb1ec1b224577fe539
   requires_dist:
-  - jupyterlab
-  - notebook
-  - pandas
-  - matplotlib
-  - seaborn
-  - scikit-learn
   - ipykernel
   - ipywidgets
+  - jupyterlab
+  - matplotlib
+  - notebook
+  - scikit-learn
+  - seaborn
+  - pandas
   - ruff
   requires_python: '>=3.11'
   editable: true

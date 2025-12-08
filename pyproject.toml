@@ -18,8 +18,9 @@ channels = ["conda-forge"]
 platforms = ["win-64"]
 
 [tool.pixi.dependencies]
-python = ">=3.11"
+python = ">=3.11,<3.13"
 pip = "*"
+rise = ">=5.7.1,<6"
 
 [tool.pixi.pypi-dependencies]
 ml-fagskole = { path = ".", editable = true }

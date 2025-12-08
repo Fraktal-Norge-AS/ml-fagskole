@@ -30,7 +30,9 @@ notebook = "jupyter notebook"
 # Dette er kommandoen som lager HTML-filen
 slides = "jupyter nbconvert intro_to_ml.ipynb --to slides --no-prompt"
 # Denne lager slides OG åpner dem i nettleseren med en gang (valgfritt)
-present = "jupyter nbconvert intro_to_ml.ipynb --to slides --post serve --no-prompt"
+#present = "jupyter nbconvert intro_to_ml.ipynb --to slides --post serve --no-prompt"
+present = "jupyter nbconvert intro_to_ml.ipynb --to slides --no-prompt && python -m http.server 8000"
+
 
 [tool.ruff]
 exclude = [".pixi", ".git", ".ipynb_checkpoints", "__pycache__"]

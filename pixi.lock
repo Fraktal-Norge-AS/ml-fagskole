@@ -1084,7 +1084,7 @@ packages:
 - pypi: ./
   name: ml-fagskole
   version: 0.1.0
-  sha256: 530021d3f3881651f12a3a4493f9277c082d7043aeb545b3eaad3c21521b9c2f
+  sha256: 334e7e31708b4217b8170d821b572d472fc0016cf8d50385c3a556720a2dfbad
   requires_dist:
   - ipykernel
   - ipywidgets

@@ -1,0 +1,38 @@
+[project]
+name = "ml-fagskole"
+version = "0.1.0"
+description = "Intro til ML for akvakultur"
+requires-python = ">= 3.11"
+authors = [{name = "Truls Fretland"}]
+dynamic = ["dependencies"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.pixi.workspace]
+channels = ["conda-forge"]
+platforms = ["win-64"]
+
+[tool.pixi.dependencies]
+python = ">=3.11"
+pip = "*"
+
+[tool.pixi.pypi-dependencies]
+ml-fagskole = { path = ".", editable = true }
+
+[tool.pixi.tasks]
+lab = "jupyter lab"
+notebook = "jupyter notebook"
+
+[tool.ruff]
+exclude = [".pixi", ".git", ".ipynb_checkpoints", "__pycache__"]
+line-length = 120
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = []

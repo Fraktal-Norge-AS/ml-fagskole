@@ -37,3 +37,21 @@
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+/* Dette legger logoen oppå alle slides */
+.reveal::after {
+    content: "";
+    position: absolute;
+    top: 20px;            /* Juster avstand fra toppen */
+    left: 20px;           /* Juster avstand fra venstre */
+    width: 120px;         /* Juster bredden på logoen */
+    height: 60px;         /* Juster høyden */
+    
+    /* Endre stien under til der bildet ditt faktisk ligger */
+    background-image: url('img/f_color_rgb.png');
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 1000;        /* Sørger for at den ligger over innholdet */
+    pointer-events: none; /* Gjør at man kan klikke "gjennom" logoen */
+}

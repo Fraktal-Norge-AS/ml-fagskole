@@ -31,8 +31,10 @@ notebook = "jupyter notebook"
 # Dette er kommandoen som lager HTML-filen
 slides = "jupyter nbconvert intro_to_ml.ipynb --to slides --no-prompt"
 # Denne lager slides OG åpner dem i nettleseren med en gang (valgfritt)
-#present = "jupyter nbconvert intro_to_ml.ipynb --to slides --post serve --no-prompt"
-present = "jupyter nbconvert intro_to_ml.ipynb --to slides --no-prompt && python -m http.server 8000"
+present = "jupyter nbconvert intro_to_ml.ipynb --to slides --post serve --no-prompt"
+# CTRL+C virker ikke i present-modus, så vi lager en egen oppgave for å starte en enkel HTTP-server
+# Enklere i utvikling
+serve = "jupyter nbconvert intro_to_ml.ipynb --to slides --no-prompt && python -m http.server 8000"
 
 
 [tool.ruff]

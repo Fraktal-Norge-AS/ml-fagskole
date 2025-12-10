@@ -6,5 +6,6 @@ notebook
 scikit-learn
 seaborn
 pandas
+plotly
 ruff
 rise

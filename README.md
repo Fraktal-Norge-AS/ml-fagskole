@@ -2,6 +2,10 @@
 
 Dette prosjektet er en introduksjon til maskinlæring rettet mot akvakultur, spesielt RAS-anlegg (Resirkulerende Akvakultur System). Gjennom en Jupyter Notebook demonstreres det hvordan man kan laste inn data, utføre eksplorativ dataanalyse (EDA), og trene en enkel lineær regresjonsmodell for å predikere biomasse.
 
+# Skyoppsett
+Presentasjonsfilen [intro_to_ml.ipynb](presentasjon/intro_to_ml.ipynb) kan lastes opp i [Google Colab](https://colab.research.google.com/).
+
+# Lokalt oppsett
 ## Forutsetninger
 
 Prosjektet bruker [pixi](https://pixi.sh/) for pakke- og miljøhåndtering. Du må ha `pixi` installert på maskinen din.

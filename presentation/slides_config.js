@@ -7,8 +7,8 @@
         width: 1600,
         height: 900,
         margin: 0.1,
-        minScale: 0.2,
-        maxScale: 2.0,
+        minScale: 1.0,
+        //maxScale: 2.0,
         slideNumber: true,
     };
 
